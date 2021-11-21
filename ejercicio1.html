@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<script>
+
+    let numeroDeElementos = prompt("Ingresa el número de elementos");
+    let serieFibonacci = [0, 1];
+
+    for(let i = 2; i<numeroDeElementos; i++){
+        serieFibonacci[i] = serieFibonacci[i-1] + serieFibonacci[i-2];
+    }
+
+    serieFibonacci.forEach((x, i) => {
+        console.log(`El elemento ${i+1} es: ${x}`);
+    })
+
+</script>
+
+<html>
+
+</html>
