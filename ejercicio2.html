@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<script>
+    inicio=["unacadena",3,9,1,10,500,1,10, 2000, 253.422, true, 0.005, "5", 3.1416];
+    nums = inicio.filter(x => {
+        if(typeof(x) == "number"){
+            return x
+        }
+    });
+
+    for(let i = 0; i<nums.length; i++){
+        for(let j = i; j<nums.length; j++){
+            if(nums[j] > nums[i]){
+                let temp = nums[i];
+                nums[i]= nums[j];
+                nums[j] = temp;
+            }
+        }
+    }
+
+    console.log("Los números ordenados del arreglo de  mayor a menor son:")
+    nums.forEach(x => {
+        console.log(x);
+    });
+
+</script>
+
+<html>
+
+</html>
